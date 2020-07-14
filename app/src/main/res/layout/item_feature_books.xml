@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_feature_book_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/item_fBook_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_fBook_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/name"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_fBook_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_fBook_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/author"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_name"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_name" />
+
+        <TextView
+            android:id="@+id/item_fBook_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/price"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_author"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_author" />
+
+        <TextView
+            android:id="@+id/item_fBook_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ratting"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_price"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_price" />
+
+        <TextView
+            android:id="@+id/item_fBook_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/discount"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_rate"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_rate" />
+
+        <TextView
+            android:id="@+id/item_fBook_name_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_fBook_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_fBook_author_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_name_api"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_name_api" />
+
+        <TextView
+            android:id="@+id/item_fBook_price_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_author_api"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_author_api" />
+
+        <RatingBar
+            android:id="@+id/item_fBook_rate_api"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:numStars="5"
+            android:text="@string/ratting"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_price_api"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_price_api" />
+
+        <TextView
+            android:id="@+id/item_fBook_discount_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_rate_api"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_rate_api" />
+
+        <TextView
+            android:id="@+id/item_fBook_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/description"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_img"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_img" />
+
+        <TextView
+            android:id="@+id/item_fBook_description_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_fBook_description"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_img" />
+
+        <TextView
+            android:id="@+id/item_fBook_author_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="@string/author_description"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_description"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_description" />
+
+        <TextView
+            android:id="@+id/item_fBook_author_description_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/item_fBook_description_api"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_description_api" />
+
+        <Button
+            android:id="@+id/item_fBook_buy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_solid_accent"
+            android:text="@string/buy_now"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_author_description_api" />
+
+        <Button
+            android:id="@+id/item_fBook_view_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorPrimaryMoreDark"
+            android:text="@string/view_book"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_fBook_author_description_api" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
